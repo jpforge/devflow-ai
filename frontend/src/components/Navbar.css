@@ -1,0 +1,70 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0F172A; /* fully opaque */
+    backdrop-filter: none;     /* optional: remove blur since it's not visible anymore */
+    backdrop-filter: blur(8px);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 50;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Inner container */
+  .navbar-container {
+    max-width: 1120px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    outline-offset: 3px;
+    cursor: default;
+  }
+  
+  .logo-container:focus {
+    outline: 2px solid white;
+    outline-offset: 3px;
+  }
+  
+  /* Logo main text */
+  .logo-main {
+    font-weight: 800;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  .logo-accent {
+    color: #8B5CF6; /* Purple accent */
+  }
+  
+  /* Subtext */
+  .logo-subtext {
+    font-size: 0.75rem;
+    color: #94A3B8; /* Tailwind gray-400 */
+    user-select: none;
+    display: none; /* hidden on small screens */
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 767px) {
+    /* Show subtext only on md+ */
+    .logo-subtext {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Show subtext on md+ */
+    .logo-subtext {
+      display: block;
+    }
+  }
+  
