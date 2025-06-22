@@ -31,7 +31,7 @@ function App() {
     setLoading(true);
     setFeedback('');
     try {
-      const res = await axios.post('http://localhost:5000/review', { code });
+      const res = await axios.post('https://devflow-ai.onrender.com/review', { code });
       setFeedback(res.data.feedback);
       // setCode(''); // uncomment to clear input on success
     } catch (err) {
