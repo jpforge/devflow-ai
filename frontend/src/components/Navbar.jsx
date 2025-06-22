@@ -10,9 +10,9 @@ const Navbar = () => {
         {/* Logo + Tag */}
         <div className="logo-container" tabIndex={0} aria-label="JPForge logo">
           <div className="logo-main">
-            JP<span className="logo-accent">Forge</span>
+            DevFlow<span className="logo-accent">.ai</span>
           </div>
-          <div className="logo-subtext">Code. Build. Forge your ideas.</div>
+          <div className="logo-subtext">by JPForge<span className="logo-accent"> Labs</span></div>
         </div>
       </div>
     </nav>
